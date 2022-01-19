@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+@media screen and (max-width: 424px) {
+	.header__add-button {
+		position: fixed;
+		bottom: 30px;
+		right: 20px;
+		font-size: 20px;
+	}
+}

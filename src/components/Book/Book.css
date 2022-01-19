@@ -1,0 +1,82 @@
+.book {
+	display: flex;
+	align-items: center;
+}
+
+.book__number {
+	margin-right: 30px;
+	font-size: 1.25rem;
+	color: #aaa;
+}
+
+.book__info {
+	max-width: 50%;
+}
+
+.book__title {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	margin-bottom: 5px;
+}
+
+.book__author {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	color: gray;
+}
+
+.book__actions {
+	margin-left: auto;
+	display: flex;
+}
+
+.book__button {
+	margin-right: 10px;
+	background-color: #958DA5;
+}
+
+.book__button:hover {
+	background-color: #CCC2DC;
+}
+
+.book__button_type_delete {
+	background-color: #b3261e;
+}
+
+.book__button_type_delete:hover {
+	background-color: #e46962;
+}
+
+@media screen and (max-width: 767px) {
+	.book {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.book__actions {
+		margin: 20px 0;
+		justify-content: center;
+	}
+
+	.book__number {
+		margin: 0;
+	}
+
+	.book__info {
+		max-width: 100%;
+	}
+
+	.book__title {
+		text-align: center;
+	}
+	
+	.book__author {
+		text-align: center;
+	}
+}
